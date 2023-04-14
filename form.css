@@ -165,7 +165,7 @@ form input {
 #my-table {
     position: absolute;
      left: 0;
-    font-size: larger;
+    font-size: large;
     line-height: 3rem;
     width: 100vw;
     background-color:green;
@@ -181,6 +181,9 @@ form input {
 }
 #my-table,th {
     font-size: 1.5rem;
+}
+#my-table,td {
+    font-size: medium;
 }
 
   
