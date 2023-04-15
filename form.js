@@ -1,3 +1,6 @@
+
+
+//food
 let list1 = [];
 let list2 = [];
 let list3 = [];
@@ -10,7 +13,7 @@ let n = 1;
 let x = 0;
 
 function AddRow() {
-
+debugger;
   
 const form = document.getElementById('my-form');
 const AddRown = document.getElementById("my-table");
@@ -21,7 +24,8 @@ const AddRown = document.getElementById("my-table");
   list1[x] = form.elements["firstName"].value;
   list2[x] = form.elements["lastName"].value;
   list3[x] = form.elements["gender"].value;
-  list4[x] = Array.from(form.elements["food"]).filter(option => option.selected).map(option => option.value);
+  // list4[x] = Array.from(form.elements["food"]).filter(option => option.selected).map(option => option.value);
+  list4[x] = form.elements['food'].value
   list5[x] = form.elements["state"].value;
   list6[x] = form.elements["address"].value;
   list7[x] = form.elements["pincode"].value;
@@ -51,3 +55,4 @@ const AddRown = document.getElementById("my-table");
   form.reset();
 }
 
+//select

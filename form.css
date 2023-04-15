@@ -6,18 +6,17 @@
     font-family: sans-serif;
 }
 
-body{
-   background-color: #000000;
-   background-image: linear-gradient(147deg, #000000 0%, #000000 74%);;
-}
 
+body {
+      background-color: rgb(0, 0, 0);
+}
 .main {
     width: 100vw;
     height: 6rem;
    text-align: center;
    position: relative;
-   background-color: black;
-   border-bottom: 1px solid rgb(247, 247, 247);
+  
+   border-bottom: 1px solid white;
 }
 
 .main img {
@@ -27,29 +26,29 @@ body{
       font-size: 5rem;
       height: 8rem;
       position: absolute;
-      background-image: url(form-2.gif);
-      background-clip: text;
-      background-size: cover;
-      color: transparent;
-      -webkit-background-clip: text;
+      background-image:linear-gradient(40deg pink,blue);
+      background-clip: text; 
+      color: rgb(180, 163, 227);
+      /* -webkit-background-clip: text; */
       width: 100%;
       overflow: hidden;
-}
-.video {
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   width: 100vw;
+      animation: heading 3s ease infinite;
 }
 
+@keyframes heading {
+    0%{color: rgb(168, 97, 177)}
+    100%{color: rgb(103, 64, 113)}
+}
 
 .container {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0,0.4),rgba(0,0,0,0,0.4),url(form_background.jpg));
+        background-size: cover;
+        background-position: center;
 }
 
 .second_container{
@@ -69,70 +68,102 @@ body{
     display: grid;
     place-items: center;
     margin-top: 20px;
-    border: 2px solid rgb(0, 0, 0);
-    /* background-image: url(form-3.gif); */
     color: white;
     transition: 1s;
     box-shadow: rgb(255, 255, 255) 0px 20px 30px -10px;
     filter: blur(1px);
+    background-image: url(blankpanther.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+
 }
+
 
 #my-form:hover {
     filter: blur(0px);
     transition: 0.76s;
-    box-shadow: rgb(248, 248, 255) 0px 7px 29px 0px;
 }
 
-form input {
+#my-form input {
     width: 20rem;
     height: 3rem;
     padding: 6px;
-    background-color: lightgray;
+    background-color: rgb(0, 0, 0);
     border: none;
     margin: 2px;
-    border-radius: 4px;
+    border-radius: 10px;
     outline: none;
+    cursor: pointer;
+    box-shadow: rgba(251, 251, 252, 0.37) 0px 8px 24px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background: none;
 }
+
+
 
 #gender {
-    width: 20rem;
-    height: 3rem;
-    padding: 6px;
-    background-color: lightgray;
+    color: rgb(255, 255, 255);
+    padding: 1px;
     border: none;
-    margin: 2px;
-    border-radius: 4px;
+    max-width: 20rem;
+    max-height: 5rem;
     outline: none;
 }
 #food {
-    width: 20rem;
-    overflow:auto;
-    padding: 5px;
-    height: 5rem;
+    color: rgb(255, 255, 255);
+    padding: 1px;
     border: none;
-    border-radius: 5px;
-    background-color: lightgray;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 20rem;
+    max-height: 5rem;
     outline: none;
+    border-radius: 10px;
+    /* border: 1px solid rgb(139, 34, 34); */
 }
 
 #state {
-    width: 20rem;
-    overflow:auto;
-    padding: 5px;
-    height: 3rem;
+    padding: 1px;
     border: none;
-    border-radius: 5px;
-    background-color: lightgray;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 20rem;
+    max-height: 5rem;
     outline: none;
+    color: white;
+    border-radius: 10px;
+    /* border: 1px solid rgb(139, 34, 34); */
 }
+
+
+.vscomp-toggle-button{
+    padding: 4px;
+    height: 3.4rem;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    box-shadow: rgba(251, 251, 252, 0.2) 0px 8px 24px;
+    background: transparent;
+}
+
+
+
+
+
 
 #address {
     width: 20rem;
-    background-color: lightgrey;
-    border-radius: 5px;
+    height: 3rem;
+    padding: 7px;
+    background-color: rgb(0, 0, 0);
+    margin: 2px;
+    border-radius: 10px;
     outline: none;
+    box-shadow: rgba(251, 251, 252, 0.37) 0px 8px 24px;
+    color: rgb(255, 255, 255);
+    border: none;
 }
 #agree {
     height: 1rem;
@@ -161,6 +192,12 @@ form input {
 #show {
     border: 1px solid black;
 }
+#check {
+    position: absolute;
+    bottom: 3rem;
+    left: 5rem;
+    position: fixed;
+}
 
 #my-table {
     position: absolute;
@@ -168,25 +205,36 @@ form input {
     font-size: large;
     line-height: 3rem;
     width: 100vw;
-    background-color:green;
-    color: rgb(237, 237, 237);
+    
+    color: rgb(238, 238, 238);
     text-align: center;
 }
 #my-table,tr,th,td {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 22, 22);
     border-collapse: collapse;
     margin: 0;
     padding:6px;
+     color: white;
      font-size: larger;
 }
 #my-table,th {
+    color: rgb(246, 85, 85);
     font-size: 1.5rem;
 }
 #my-table,td {
     font-size: medium;
 }
 
+.table-heading {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(246, 85, 85);
+}
   
+
+
+
+
 @media (min-width:400px) {
     
 #my-table {
@@ -195,10 +243,10 @@ form input {
     font-size: larger;
     line-height: 3rem;
     width: 100vw;
-    background-color:green;
-    color: rgb(237, 237, 237);
     text-align: center;
+    color: white;
  }
+
 
  
 #my-table,tr,th,td {
@@ -207,11 +255,12 @@ form input {
     margin: 0;
     padding:6px;
      font-size: larger;
+     color: rgb(255, 255, 255)
 }
 #my-table,th {
     font-size: 1.5rem;
+    color: rgb(180, 163, 227)
 }
- 
 
 #my-form {
     display: flex;
@@ -231,11 +280,3 @@ form input {
 }
 }
 
-/* @media (max-width:1088px) {
-    
-    #my-table {
-        position: absolute;
-        bottom:0;
-        left: 10rem;
-     }
-    } */
