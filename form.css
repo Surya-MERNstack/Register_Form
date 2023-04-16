@@ -16,7 +16,7 @@ body {
    text-align: center;
    position: relative;
   
-   border-bottom: 1px solid white;
+   border-bottom: 1px solid purple;
 }
 
 .main img {
@@ -26,18 +26,19 @@ body {
       font-size: 5rem;
       height: 8rem;
       position: absolute;
-      background-image:linear-gradient(40deg pink,blue);
+      background-image:url(black-panther-1.gif);
       background-clip: text; 
-      color: rgb(180, 163, 227);
-      /* -webkit-background-clip: text; */
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
       width: 100%;
       overflow: hidden;
       animation: heading 3s ease infinite;
 }
 
 @keyframes heading {
-    0%{color: rgb(168, 97, 177)}
-    100%{color: rgb(103, 64, 113)}
+    0%{background-image: url(black-panther-1.gif);}
+    100%{background-image: url(black-panther-1.gif);}
 }
 
 .container {
@@ -75,14 +76,43 @@ body {
     background-image: url(blankpanther.jpg);
     background-repeat: no-repeat;
     background-position: center;
-   
-
 }
 
+#my-form:hover {
+    border: none;
+    outline: none;
+    box-shadow: rgb(229, 112, 253) 0px 12px 28px 0px,
+    rgb(229, 112, 253) 0px 2px 4px 0px,
+    rgb(229, 112, 253) 0px 0px 0px 1px inset;
+}
+#button {
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: 1s;
+}
+
+#button:hover {
+  background-color: rgb(255, 1, 1);
+  transition: 0.67s;
+  color: white;
+}
 
 #my-form:hover {
     filter: blur(0px);
     transition: 0.76s;
+}
+
+#my-form input:hover{
+    border: 1px solid purple;
+    transition: 0.45s ease ;
 }
 
 #my-form input {
@@ -106,15 +136,32 @@ body {
 #gender {
     color: rgb(255, 255, 255);
     padding: 1px;
-    border: none;
+    transition: 0.45s ease ;
     max-width: 20rem;
     max-height: 5rem;
     outline: none;
 }
+
+#gender:hover {
+    transition: 0.45s ease ;
+    border: 1px solid purple;
+    border-radius: 10px;
+}
+
+#food:hover {
+    transition: 0.45s ease ;
+    border: 1px solid purple;
+    border-radius: 10px;
+}
+
+#state:hover {
+    transition: 0.45s ease ;
+    border: 1px solid purple;
+    border-radius: 10px;
+}
 #food {
     color: rgb(255, 255, 255);
     padding: 1px;
-    border: none;
     max-width: 20rem;
     max-height: 5rem;
     outline: none;
@@ -165,36 +212,26 @@ body {
     color: rgb(255, 255, 255);
     border: none;
 }
+
+#address:hover {
+    transition: 0.45s ease ;
+    border: 1px solid purple;
+    border-radius: 10px;
+}
+
 #agree {
     height: 1rem;
     width: 1px;
     background-color: rgb(255, 255, 255);
 }
 
-#button {
-      padding: 4px;
-      cursor: pointer;
-      border-radius: 4px;
-      background-color: lightcoral;
-      width: 20rem;
-      height: 2rem;
-      border: none;
-      color: white;
-      font-size: 1.8rem;
-      font-weight: 600;
-      transition: 1s;
-}
 
-#button:hover {
-    background-color: rgb(255, 1, 1);
-    transition: 0.67s;
-}
 #show {
     border: 1px solid black;
 }
 #check {
     position: absolute;
-    bottom: 3rem;
+    bottom: 4rem;
     left: 5rem;
     position: fixed;
 }
@@ -205,8 +242,7 @@ body {
     font-size: large;
     line-height: 3rem;
     width: 100vw;
-    
-    color: rgb(238, 238, 238);
+    color:transparent;
     text-align: center;
 }
 #my-table,tr,th,td {
@@ -228,7 +264,7 @@ body {
 .table-heading {
     font-size: 2rem;
     text-align: center;
-    color: rgb(246, 85, 85);
+    color: rgb(248, 156, 170);
 }
   
 
@@ -244,7 +280,10 @@ body {
     line-height: 3rem;
     width: 100vw;
     text-align: center;
+    background-image: url(blankpanther.jpg);
+     background-color: rgb(59, 58, 58);
     color: white;
+    cursor: pointer;
  }
 
 
@@ -255,7 +294,8 @@ body {
     margin: 0;
     padding:6px;
      font-size: larger;
-     color: rgb(255, 255, 255)
+     color: rgb(255, 255, 255);
+     
 }
 #my-table,th {
     font-size: 1.5rem;
@@ -273,7 +313,6 @@ body {
     place-items: center;
     margin-top: 25px;
     border: 2px solid rgb(0, 0, 0);
-    /* background-image: url(form-3.gif); */
     color: white;
     transition: 1s;
     box-shadow: rgb(255, 255, 255) 0px 20px 30px -10px;
