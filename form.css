@@ -8,38 +8,37 @@
 
 
 body {
-      background-color: rgb(0, 0, 0);
+      background-image: linear-gradient(to right, rgb(249, 249, 247),rgb(255, 255, 255));
 }
 .main {
-    width: 100vw;
-    height: 6rem;
+   width: 100vw;
+   height: 14rem;
    text-align: center;
    position: relative;
-  
-   border-bottom: 1px solid purple;
+   background-image: url(background-img.jpeg);
+   border-bottom: 1px dashed black;
+   
 }
 
-.main img {
-     object-fit: fill;
-}
 .main h2 {
-      font-size: 5rem;
-      height: 8rem;
-      position: absolute;
-      background-image:url(black-panther-1.gif);
-      background-clip: text; 
-      background-position: center;
-      color: transparent;
-      -webkit-background-clip: text;
-      width: 100%;
-      overflow: hidden;
-      animation: heading 3s ease infinite;
+    font-size: 3rem;
+    height: 8rem;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 3px solid rgb(133, 133, 225);
+    color: white;
+    text-align: start;
+    margin-top: 6rem;
+    background-color: #fce055;
+    background-image: linear-gradient(319deg, #aff1f1 0%, #729cf1 37%, #46237a 100%);
+    
 }
 
-@keyframes heading {
-    0%{background-image: url(black-panther-1.gif);}
-    100%{background-image: url(black-panther-1.gif);}
-}
+
+
+
+
 
 .container {
         display: flex;
@@ -47,15 +46,12 @@ body {
         align-items: center;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(rgba(0,0,0,0,0.4),rgba(0,0,0,0,0.4),url(form_background.jpg));
-        background-size: cover;
-        background-position: center;
 }
 
 .second_container{
     width: 600px;
     height: 100vh;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 
@@ -69,102 +65,110 @@ body {
     display: grid;
     place-items: center;
     margin-top: 20px;
-    color: white;
+    color: rgb(12, 12, 12);
     transition: 1s;
     box-shadow: rgb(255, 255, 255) 0px 20px 30px -10px;
     filter: blur(1px);
-    background-image: url(blankpanther.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
 }
 
 #my-form:hover {
     border: none;
     outline: none;
-    box-shadow: rgb(229, 112, 253) 0px 12px 28px 0px,
-    rgb(229, 112, 253) 0px 2px 4px 0px,
-    rgb(229, 112, 253) 0px 0px 0px 1px inset;
+    box-shadow: rgb(91, 89, 91) 0px 12px 28px 0px,
+    rgb(118, 103, 121) 0px 2px 4px 0px,
+    rgb(93, 91, 91) 0px 0px 0px 1px inset;
 }
-#button {
-    padding: 4px;
-    cursor: pointer;
-    border-radius: 4px;
-    background-color: rgb(0, 0, 0);
+#submit_button {
+    padding: 5px;
     width: 20rem;
-    height: 2rem;
+    height: 3rem;
+    color: white;
+    font-weight: 700;
+    background-color: lightcoral;
     border: none;
-    color: red;
-    font-size: 1.8rem;
-    font-weight: 600;
-    transition: 1s;
+    border-radius: 10px;
+    transition: 0.45s;
+    cursor: pointer;
+    font-size: larger;
+    animation: button 2s linear infinite;
 }
 
-#button:hover {
-  background-color: rgb(255, 1, 1);
-  transition: 0.67s;
-  color: white;
+#submit_button:hover {
+    color:white;
+    background-color: red;
+    transition: 0.45s;
 }
 
+@keyframes button {
+    0% {color: rgb(192, 185, 178); }
+    100%{color: rgb(254, 240, 240); }
+}
 #my-form:hover {
     filter: blur(0px);
     transition: 0.76s;
 }
 
 #my-form input:hover{
-    border: 1px solid purple;
+    border: 1px solid dodgerblue;
     transition: 0.45s ease ;
+    outline: none;
 }
 
 #my-form input {
     width: 20rem;
     height: 3rem;
     padding: 6px;
-    background-color: rgb(0, 0, 0);
-    border: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid darkblue;
     margin: 2px;
     border-radius: 10px;
     outline: none;
     cursor: pointer;
     box-shadow: rgba(251, 251, 252, 0.37) 0px 8px 24px;
-    color: rgb(255, 255, 255);
-    border: none;
-    background: none;
+    color: rgb(0, 0, 0);
 }
 
 
 
 #gender {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 1px;
     transition: 0.45s ease ;
     max-width: 20rem;
-    max-height: 5rem;
+    max-height: 4rem;
     outline: none;
+    border: 1px solid darkblue;
+    border-radius: 10px;
 }
 
 #gender:hover {
     transition: 0.45s ease ;
-    border: 1px solid purple;
+    border: 1px solid rgb(34, 82, 152);
     border-radius: 10px;
 }
 
 #food:hover {
     transition: 0.45s ease ;
-    border: 1px solid purple;
+    border: 1px solid darkblue;
     border-radius: 10px;
 }
 
 #state:hover {
     transition: 0.45s ease ;
-    border: 1px solid purple;
+    border: 1px solid darkblue;
     border-radius: 10px;
 }
 #food {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 1px;
     max-width: 20rem;
-    max-height: 5rem;
+    max-height: 4rem;
     outline: none;
+    border-radius: 10px;
+    border: 1px solid darkblue;
     border-radius: 10px;
     /* border: 1px solid rgb(139, 34, 34); */
 }
@@ -173,50 +177,47 @@ body {
     padding: 1px;
     border: none;
     max-width: 20rem;
-    max-height: 5rem;
+    max-height: 4rem;
     outline: none;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
-    /* border: 1px solid rgb(139, 34, 34); */
+    border: 1px solid darkblue;
+    border-radius: 10px;
 }
 
 
 .vscomp-toggle-button{
     padding: 4px;
-    height: 3.4rem;
+    height: 3rem;
     border-radius: 10px;
     text-align: center;
     outline: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 600;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border: none;
-    box-shadow: rgba(251, 251, 252, 0.2) 0px 8px 24px;
-    background: transparent;
 }
-
-
-
-
 
 
 #address {
     width: 20rem;
     height: 3rem;
     padding: 7px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(252, 252, 252);
     margin: 2px;
     border-radius: 10px;
     outline: none;
-    box-shadow: rgba(251, 251, 252, 0.37) 0px 8px 24px;
-    color: rgb(255, 255, 255);
-    border: none;
+    color: rgb(0, 0, 0);
+    border: 1ps solid darkblue;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
 }
 
 #address:hover {
     transition: 0.45s ease ;
-    border: 1px solid purple;
-    border-radius: 10px;
+    border: 1ps solid darkblue;   
+     border-radius: 10px;
 }
 
 #agree {
@@ -268,7 +269,9 @@ body {
 }
   
 
-
+#my-table,tr,th,td:hover{
+    background-color: rgb(110, 109, 109);
+  }
 
 
 @media (min-width:400px) {
@@ -280,27 +283,35 @@ body {
     line-height: 3rem;
     width: 100vw;
     text-align: center;
-    background-image: url(blankpanther.jpg);
-     background-color: rgb(59, 58, 58);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 9, 9);
     cursor: pointer;
  }
 
 
  
 #my-table,tr,th,td {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid black;
     border-collapse: collapse;
     margin: 0;
     padding:6px;
-     font-size: larger;
-     color: rgb(255, 255, 255);
-     
+     font-size: 1rem;
+     color: rgb(0, 0, 0);
+     font-weight: 600;
+     background-color: white;
 }
 #my-table,th {
-    font-size: 1.5rem;
-    color: rgb(180, 163, 227)
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0)
 }
+#my-table,td {
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+
+  
 
 #my-form {
     display: flex;
@@ -312,10 +323,16 @@ body {
     display: grid;
     place-items: center;
     margin-top: 25px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px double black;
     color: white;
     transition: 1s;
-    box-shadow: rgb(255, 255, 255) 0px 20px 30px -10px;
-}
+    box-shadow: rgb(126, 126, 126) 0px 20px 30px -10px;
 }
 
+#my-form:hover{
+    border:none;
+    outline: none;
+    
+}
+
+}

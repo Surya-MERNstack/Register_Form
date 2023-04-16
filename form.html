@@ -14,9 +14,9 @@
 </head>
 <body>
     <div class="main">
-          <h2> Wakanda Forever</h2>
-        </div>
-
+          <h2>Welcome to our website <br>
+           <span style="font-size: 2.5rem;">happy holiday</span>
+          </h2>
         </div>
    <div class="container">  
     <div class="second_container">
@@ -25,11 +25,11 @@
     <h1 style="font-size: 2rem;color: rgb(243, 152, 152);">Register</h1><br>
     <span style="font-size: small;font-weight: 700;color: lightsalmon;">Fill out this form</span><br><br>
    
-   <span style="color: rgb(180, 163, 227);font-size: larger;font-weight: 900;">UserName <i style="font-size:2rem; color: rgb(180, 163, 227);" class="fa-solid fa-user fa-fade"></i></span>
+   <span style="font-size: larger;color: rgb(0, 0, 0);font-weight: 700;">UserName <i style="font-size:2rem; color: dodgerblue" class="fa-solid fa-user fa-fade"></i></span>
     <input type="text"  id="firstName" name="firstName"  placeholder="FirstName"required><br>
     <input type="text" id="lastName" name="lastName" placeholder="LastName" required>
      <br>
-    <span style="font-size: 1.6rem;font-weight: 900;color: rgb(180, 163, 227);">Gender <i style="font-size: 2rem;color: rgb(180, 163, 227)"  class="fa-solid fa-venus-mars fa-fade"></i></span>
+    <span style="font-size: larger;color: rgb(0, 0, 0);font-weight: 700;">Gender <i style="font-size: 2rem;  color: dodgerblue"  class="fa-solid fa-venus-mars fa-fade"></i></span>
      <select id="gender"   name="gender" required >
       <option value="" disabled selected>--Select gender--</option>
       <option value="male">Male</option>
@@ -38,7 +38,7 @@
     </select>
     <br>
    <!-- food -->
-    <span style="color: rgb(180, 163, 227);font-size: larger;font-weight: 900;outline: none;border: none;"> Food <i style=" color: rgb(180, 163, 227);font-size: 2rem;" class="fa-solid fa-bowl-food fa-fade"></i></span>
+    <span style="color: rgb(0, 0, 0);font-weight: 700;font-size: larger;outline: none;border: none;"> Food <i style=" color: dodgerblue;font-size: 2rem;" class="fa-solid fa-bowl-food fa-fade"></i></span>
     <select  id="food"  name="food" multiple name="select-food"  placeholder="Select atleast 3 food"  required >
       <option value="Dosas">Dosas</option>
       <option value="Idlis">Idlis</option>
@@ -72,7 +72,7 @@
     </select>
 
     <br>
-    <label for="state" style="font-size: larger;font-weight: 900;color: rgb(180, 163, 227);border: none;outline: none;">District <i style="font-size: 2rem;color: rgb(180, 163, 227);" class="fa-solid fa-map-location-dot fa-bounce"></i></label>
+    <label for="state" style="font-size: larger;color: rgb(0, 0, 0);font-weight: 700;border: none;outline: none;">District <i style="font-size: 2rem;color: dodgerblue" class="fa-solid fa-map-location-dot fa-bounce"></i></label>
     <select id="state"  name="state" multiple   required >
       <option value="" disabled selected>--Select district--</option>
       <option value="Chennai">Chennai</option>
@@ -113,15 +113,15 @@
       <option value="Virudhunagar">Virudhunagar</option>
     </select>
     <br>
-    <span  style="font-size: 1.3rem;color: rgb(180, 163, 227);font-weight: 900;" >Address <i style="font-size: 2rem; color: rgb(180, 163, 227);" class="fa-solid fa-address-card fa-fade"></i></span>
+    <span  style="font-size: 1.3rem;color: rgb(0, 0, 0);font-weight: 700;" >Address <i style="font-size: 2rem; color: dodgerblue;" class="fa-solid fa-address-card fa-fade"></i></span>
    
     <textarea  id="address" name="address" placeholder="enter your location" rows="3" required></textarea>
     <br>
-    <span   style="font-size: 1.3rem;font-weight: 900;color: rgb(180, 163, 227);">Pincode <i style="font-size: 2rem; color: rgb(180, 163, 227);" class="fa-solid fa-location-pin-lock fa-flip"></i></span>
+    <span   style="font-size: 1.3rem;color: rgb(0, 0, 0);font-weight: 700;">Pincode <i style="font-size: 2rem; color: dodgerblue;" class="fa-solid fa-location-pin-lock fa-flip"></i></span>
     <input type="tel"  id="pincode" name="pincode" placeholder="enter the pincode" required>
-    <span style="font-size: 0.7rem;color: dodgerblue;"><input type="checkbox" required onclick="check()" id="check" name="" style="height: 1rem;margin-left: -10rem;"><br>
+    <span style="font-size: 0.7rem;color: rgb(24, 23, 23);"><input type="checkbox" required  id="check" name="" style="height: 1rem;margin-left: -10rem;"><br>
         I agree with <b>Terms and Condition</b> and the <b><br> Privacy Policy</b></span>
-   <input type="submit" id="button" onclick="AddRow()"  value="Submit">
+   <button type="submit" id="submit_button"  onclick="AddRow()"  value="Submit">Submit</button>
   </form>
     
      <br><br><br>
